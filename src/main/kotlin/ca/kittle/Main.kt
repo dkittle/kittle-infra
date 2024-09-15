@@ -38,6 +38,7 @@ fun run(ctx: Context) {
         val vpcId = vpc.id.applyValue(fun(name: String): String { return name })
         val igwId = igw.id.applyValue(fun(name: String): String { return name })
         val repositoryUrl = containerRepository.repositoryUrl.applyValue(fun(name: String): String { return name })
+        val routeTableId = vpc.defaultRouteTableId.applyValue(fun(name: String): String { return name })
 
         ctx.export("publicSubnet1Id", publicSubnet1Id)
         ctx.export("publicSubnet2Id", publicSubnet2Id)
@@ -47,6 +48,7 @@ fun run(ctx: Context) {
         ctx.export("privateSubnetGroupId", privateSGId)
         ctx.export("vpcId", vpcId)
         ctx.export("igwId", igwId)
+        ctx.export("routeTableId", routeTableId)
         ctx.export("repositoryUrl", repositoryUrl)
     }
 
