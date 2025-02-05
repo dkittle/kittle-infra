@@ -3,3 +3,10 @@ config:
   aws:region: ca-central-1
   dmseer-infra:env: prod
   dmseer-infra:fqdn: quillndice.com
+  kittle-infra:dmseer_admin_password:
+    secure: v1:z7kEyR0yyWMTca5g:CQBdoP4Fjv4T1axnCpMcGSRyZpxpUCO+nwQuZvogy2VSpWj9
+  kittle-infra:dmseer_discord_client_id: "1037152474517221387"
+  kittle-infra:dmseer_discord_client_secret:
+    secure: v1:HqxA+RTpPgS4bS5l:4Xs1wpgyEa9Rap5vAMmOiqQTL2s4+OjYAs0d3BJL9K+ie7J6gDuS+QfQjhp/8gpL
+  kittle-infra:postgres_host: dmseer-postgres-db.chl5mocqeboi.ca-central-1.rds.amazonaws.com
+encryptionsalt: v1:W/B//rL9+RY=:v1:7veZnEdtTMhUCqCG:NTEpnjVC065o/HhtmRE1f7t30YMLOg==
